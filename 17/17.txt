@@ -1,0 +1,41 @@
+17. Orientação a objetos
+        Implemente um sistema de gerenciamento de biblioteca utilizando orientação a objetos com herança e 
+        polimorfismo. O sistema deve ter as seguintes classes e funcionalidades:
+
+1. Classe Livro:
+    - Atributos:
+        - titulo
+        - autor
+        - ano_publicacao
+        - disponivel (booleano, inicializado como True)
+    - Métodos:
+        - emprestar(): Marca o livro como não disponível.
+        - devolver(): Marca o livro como disponível.
+        - exibir_info(): Exibe informações sobre o livro.
+
+
+2. Classes Derivadas:
+
+    -- Classe LivroFisico (herda de Livro):
+        - Atributos adicionais:
+            num_paginas
+        - Método sobrescrito:
+            exibir_info(): Exibe informações sobre o livro físico.
+
+    -- Classe Ebook (herda de Livro):
+        - Atributos adicionais:
+            tamanho_arquivo (em MB)
+            formato (por exemplo, PDF, EPUB)
+        - Método sobrescrito:
+            exibir_info(): Exibe informações sobre o ebook.
+
+
+3. Classe Biblioteca:
+    - Atributos:
+        livros (lista de objetos Livro)
+    - Métodos:
+        adicionar_livro(livro): Adiciona um livro à biblioteca.
+        remover_livro(titulo): Remove um livro pelo título.
+        buscar_livro(titulo): Busca um livro pelo título e retorna o livro se encontrado.
+        listar_livros_disponiveis(): Lista todos os livros disponíveis para empréstimo.
+        exibir_informacoes(titulo): Exibe as informações do livro especificado.

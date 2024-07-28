@@ -1,0 +1,20 @@
+15. Exercício de Diagrama de Banco de Dados
+Desenhe um diagrama de banco de dados para um sistema de biblioteca.
+O sistema deve gerenciar livros, autores e empréstimos. Os requisitos são:
+- Um livro pode ter vários autores, e um autor pode escrever vários livros.
+- Um livro pode ser emprestado para vários leitores em diferentes momentos.
+- Um leitor pode pegar emprestado vários livros.
+
+----------------------------------------------------------
+
+LIVRO
+AUTOR
+EMPRESTIMO
+LEITOR
+
+LIVRO >---|-LIVRO-AUTOR-|---< AUTOR
+    |
+    -
+    |
+    V
+EMPRESTIMO <----|-LEITOR
